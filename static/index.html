@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BioProppie — Private Biotech Workspace</title>
+  <meta name="description" content="A prototype workspace for searching private biotech notes and literature, with server-controlled external access and checked source quotes.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231e1035'/%3E%3Cpath d='M5 25 14 9l4.5 8L23 12l6 13H5Z' fill='none' stroke='%23fff' stroke-width='1.4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,100..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-mode="LOCAL_ONLY">
+  <div class="sky" aria-hidden="true"></div>
+  <div class="topo" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <svg class="sr-only" aria-hidden="true">
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14v2.5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.4 2.3 3.6 5.1 3.6 8.5s-1.2 6.2-3.6 8.5c-2.4-2.3-3.6-5.1-3.6-8.5S9.6 5.8 12 3.5Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m15.5 15.5 4.2 4.2"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11.5 20 4l-7.2 16-2.4-6.2L4 11.5Z"/><path d="m10.4 13.8 4.8-5.1"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3.5 13.4 9l5.6 1.4-5.6 1.4L12 17.5l-1.4-5.7L5 10.4 10.6 9 12 3.5Z"/><path d="M19 15.5 19.7 18l2.3.7-2.3.7-.7 2.3-.7-2.3-2.3-.7 2.3-.7.7-2.5Z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5.5h16v10.2H9.2L4 19.5V5.5Z"/><path d="M8 9h8M8 12.2h5"/></symbol>
+    <symbol id="i-notes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4.5h9l3 3v12H6v-15Z"/><path d="M15 4.5v3h3M9 11h6M9 14.2h6M9 17.4h4"/></symbol>
+    <symbol id="i-library" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4.5h4v15H5v-15ZM10.5 4.5h4v15h-4v-15ZM16 5l3.5-1 3 14.3-3.5.8L16 5Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3.5 19 6v5.7c0 4.2-2.6 7.3-7 9.1-4.4-1.8-7-4.9-7-9.1V6l7-2.5Z"/><path d="m8.7 12 2.2 2.2 4.4-4.4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 5h6v6M19 5l-8 8"/><path d="M18 14.5V19H5V6h4.5"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="m6.7 7.2 3.6 3.2M17.3 7.2l-3.6 3.2M6.7 16.8l3.6-3.2M17.3 16.8l-3.6-3.2"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 25 13 8l5.1 8.5L21 12l8 13H3Z"/><path d="m10.5 12 2.8 2.2 3-1.6"/></symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark"><svg><use href="#i-mountain"/></svg></div>
+      <div class="brand-text">
+        <span class="brand-name">BioProppie</span>
+        <span class="brand-sub">Private R&amp;D workspace</span>
+      </div>
+    </div>
+    <div class="topbar-center" aria-label="Workspace status">
+      <span class="top-stat"><span class="dot"></span><b id="top-papers">8</b> papers</span>
+      <span class="top-stat"><b id="top-notes">4</b> meeting notes</span>
+      <span class="top-stat"><b id="top-chunks">—</b> local chunks</span>
+    </div>
+    <div class="topbar-right">
+      <div class="policy-control" aria-label="Server privacy policy">
+        <span class="policy-label">Server policy</span>
+        <div class="segmented" role="group" aria-label="Egress policy mode">
+          <button class="mode-btn active" data-mode="LOCAL_ONLY" type="button" title="Block all external egress">
+            <svg><use href="#i-lock"/></svg>Local only
+          </button>
+          <button class="mode-btn" data-mode="CLOUD_APPROVED" type="button" title="Allow Europe PMC and optional cloud synthesis">
+            <svg><use href="#i-globe"/></svg>Cloud
+          </button>
+        </div>
+      </div>
+      <div class="egress-badge" id="egress-badge"><span class="pulse-dot"></span><span id="egress-text">External egress: blocked</span></div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow"><span class="rule"></span>Private R&amp;D workspace / retrieval prototype</div>
+        <h1 id="hero-title">Search the lab notebook.<br><em>Check the source.</em></h1>
+      </div>
+      <div class="hero-side">
+        <p class="hero-lede">Indexes internal meeting notes and biotech literature locally. External tools stay off until the server policy is changed.</p>
+        <div class="hero-facts">
+          <span class="fact"><b id="hero-bundled">12</b> bundled docs</span>
+          <span class="fact">BM25 + vectors</span>
+          <span class="fact">Egress off by default</span>
+          <span class="fact">Quotes checked</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="layout">
+      <section class="workspace" aria-label="Research workspace">
+        <div class="workspace-head">
+          <nav class="tabs" role="tablist" aria-label="Workspace views">
+            <button class="tab-btn active" id="chat-tab" role="tab" aria-selected="true" aria-controls="panel-chat" data-tab="chat" type="button">
+              <svg><use href="#i-chat"/></svg>Research &amp; memory <span class="tab-count">01</span>
+            </button>
+            <button class="tab-btn" id="meetings-tab" role="tab" aria-selected="false" aria-controls="panel-meetings" data-tab="meetings" type="button">
+              <svg><use href="#i-notes"/></svg>Meeting notes <span class="tab-count" id="tab-notes-count">4</span>
+            </button>
+            <button class="tab-btn" id="literature-tab" role="tab" aria-selected="false" aria-controls="panel-literature" data-tab="literature" type="button">
+              <svg><use href="#i-library"/></svg>Literature <span class="tab-count" id="tab-papers-count">8</span>
+            </button>
+          </nav>
+          <div class="workspace-meta">
+            <span class="secure"><svg><use href="#i-lock"/></svg><span id="workspace-policy">Local index</span></span>
+            <span>·</span>
+            <span id="workspace-backend">initialising</span>
+          </div>
+        </div>
+
+        <section class="panel active" id="panel-chat" role="tabpanel" aria-labelledby="chat-tab">
+          <div class="chat-intro">
+            <div class="chat-title-row">
+              <div>
+                <h2 class="chat-title">Ask a question about <em>the corpus.</em></h2>
+                <p class="chat-sub">Search bundled papers and meeting notes. Answers show the text they came from.</p>
+              </div>
+              <div class="local-pill" id="chat-policy-pill"><svg><use href="#i-shield"/></svg><span>Extractive only</span></div>
+            </div>
+            <div class="prompt-grid" aria-label="Demo prompts">
+              <button class="prompt-chip" type="button" data-prompt="What did we discuss in the 24 September meeting?">
+                <span class="prompt-kicker"><span class="prompt-index">01 / memory</span><span>Meeting recall</span></span>
+                <span class="prompt-text">What did we discuss in the 24 September meeting?</span>
+                <span class="prompt-arrow">↗</span>
+              </button>
+              <button class="prompt-chip" type="button" data-prompt="Compare our internal CD3 affinity decision against live PubMed literature">
+                <span class="prompt-kicker"><span class="prompt-index">02 / compare</span><span>Internal vs. live</span></span>
+                <span class="prompt-text">Compare our internal CD3 affinity decision against live PubMed literature</span>
+                <span class="prompt-arrow">↗</span>
+              </button>
+              <button class="prompt-chip" type="button" data-prompt="Quote the exact efficacy and safety numbers from our bundled bispecific paper">
+                <span class="prompt-kicker"><span class="prompt-index">03 / verify</span><span>Quote check</span></span>
+                <span class="prompt-text">Quote the exact efficacy and safety numbers from our bundled bispecific paper</span>
+                <span class="prompt-arrow">↗</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
+
+          <div class="composer-wrap">
+            <form class="composer" id="query-form">
+              <textarea id="query-input" rows="1" placeholder="Ask your private corpus…" maxlength="600" aria-label="Ask your private corpus"></textarea>
+              <button class="send-btn" id="send-btn" type="submit" aria-label="Send query">
+                <svg><use href="#i-send"/></svg>
+              </button>
+            </form>
+            <div class="composer-foot">
+              <span class="lockline" id="composer-policy"><svg><use href="#i-lock"/></svg>Local-only: no query leaves this server</span>
+              <span>Enter to send · Shift+Enter for a new line</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-meetings" role="tabpanel" aria-labelledby="meetings-tab">
+          <div class="meeting-layout">
+            <aside class="meeting-list" id="meeting-list" aria-label="Meeting notes"></aside>
+            <div class="meeting-main" id="meeting-main"></div>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-literature" role="tabpanel" aria-labelledby="literature-tab">
+          <div class="lit-toolbar">
+            <label class="lit-search">
+              <svg><use href="#i-search"/></svg>
+              <input id="lit-filter" type="search" placeholder="Filter by title, journal, or PMID…" aria-label="Filter literature">
+            </label>
+            <span class="lit-stat"><b id="lit-bundled-count">8</b> bundled · <b id="lit-live-count">0</b> live</span>
+          </div>
+          <div class="lit-grid-wrap">
+            <div class="lit-grid" id="lit-grid"></div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="audit" aria-label="Server audit log">
+        <div class="audit-head">
+          <div>
+            <div class="audit-kicker"><span class="live-dot"></span>Request log / live</div>
+            <h2>Queries and <em>policy changes.</em></h2>
+          </div>
+          <span class="audit-count" id="audit-count">0 events</span>
+        </div>
+        <div class="guard-card" id="guard-card">
+          <div class="guard-icon"><svg><use href="#i-shield"/></svg></div>
+          <div class="guard-copy">
+            <b id="guard-title">Egress off</b>
+            <span id="guard-copy">0 outbound calls. Queries stay on this server.</span>
+          </div>
+        </div>
+        <div class="audit-feed" id="audit-feed"></div>
+        <div class="audit-boundary">
+          <div class="boundary-title">Egress boundary / server gate</div>
+          <div class="boundary-row"><span>Local index</span><i></i><b id="boundary-local">12 docs</b></div>
+          <div class="boundary-gate"><span id="boundary-mode">Blocked</span><small>gate</small><span id="boundary-egress">0 calls</span></div>
+          <div class="boundary-row ext"><span>Public web</span><i></i><b id="boundary-web">ebi.ac.uk</b></div>
+        </div>
+        <div class="audit-foot">
+          <b>Note.</b> LOCAL_ONLY is the default. External tools are blocked in the API before any request is sent.
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
