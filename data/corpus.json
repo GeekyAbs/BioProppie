@@ -1,0 +1,239 @@
+{
+  "name": "BioProppie Demo Corpus",
+  "version": "1.0",
+  "documents": [
+    {
+      "id": "PMID-38448606",
+      "type": "paper",
+      "title": "The present and future of bispecific antibodies for cancer therapy.",
+      "date": "2024-03-06",
+      "display_date": "6 March 2024",
+      "journal": "Nature reviews. Drug discovery",
+      "authors": "Klein C, Brinkmann U, Reichert JM, Kontermann RE.",
+      "url": "https://europepmc.org/article/MED/38448606",
+      "pmid": "38448606",
+      "pmcid": null,
+      "doi": "10.1038/s41573-024-00896-6",
+      "content": "Bispecific antibodies (bsAbs) enable novel mechanisms of action and/or therapeutic applications that cannot be achieved using conventional IgG-based antibodies. Consequently, development of these molecules has garnered substantial interest in the past decade and, as of the end of 2023, 14 bsAbs have been approved: 11 for the treatment of cancer and 3 for non-oncology indications. bsAbs are available in different formats, address different targets and mediate anticancer function via different molecular mechanisms. Here, we provide an overview of recent developments in the field of bsAbs for cancer therapy. We focus on bsAbs that are approved or in clinical development, including bsAb-mediated dual modulators of signalling pathways, tumour-targeted receptor agonists, bsAb-drug conjugates, bispecific T cell, natural killer cell and innate immune cell engagers, and bispecific checkpoint inhibitors and co-stimulators. Finally, we provide an outlook into next-generation bsAbs in earlier stages of development, including trispecifics, bsAb prodrugs, bsAbs that induce degradation of tumour targets and bsAbs acting as cytokine mimetics.",
+      "live": false
+    },
+    {
+      "id": "PMID-37769148",
+      "type": "paper",
+      "title": "IVIg Use Associated with Ten-Fold Reduction of Serious Infections in Multiple Myeloma Patients Treated with Anti-BCMA Bispecific Antibodies.",
+      "date": "2023-11-01",
+      "display_date": "1 November 2023",
+      "journal": "Blood cancer discovery",
+      "authors": "Lancman G, Parsa K, Kotlarz K, Avery L, Lurie A, Lieberman-Cribbin A, Cho HJ, Parekh SS, Richard S, Richter J, Rodriguez C, Rossi A, Sanchez LJ, Thibaud S, Jagannath S, Chari A.",
+      "url": "https://europepmc.org/article/MED/37769148",
+      "pmid": "37769148",
+      "pmcid": "PMC10618720",
+      "doi": "10.1158/2643-3230.bcd-23-0049",
+      "content": "BCMA-targeted bispecific antibodies (BiAb) are efficacious in relapsed/refractory multiple myeloma; however, serious infections have emerged as important toxicities. In this retrospective study, we characterized all infections and their risk factors, and evaluated the impact of infection prophylaxis in patients treated with BCMA-targeted BiAbs. Among 37 patients, 15 (41%) experienced a grade 3-5 infection, with two infection-related deaths during deep remissions. Most (84%) infections occurred during disease remissions. The cumulative probability of grade 3-5 infection increased over time with no plateau. Among responders (n = 26), profound hypogammaglobulinemia occurred in 100% and continued throughout the entire duration of treatment. During periods when patients were receiving intravenous immunoglobulin (IVIg), the rate of grade 3-5 infections was 90% lower than during observation (incidence rate ratio, 0.10; 95% confidence interval, 0.01-0.80; P = 0.0307). No other risk factors for infection were identified. This study demonstrates that profound hypogammaglobulinemia is universal with BCMA-targeted BiAbs, with intravenous immunoglobulin potentially abrogating most of the infection risk.\n\nSignificance: To the best of our knowledge, this is the first study to comprehensively analyze risk factors and mitigation strategies to prevent infections in myeloma patients receiving anti-BCMA bispecific antibodies. Profound and prolonged hypogammaglobulinemia was universal among responders, while immunoglobulin replacement was associated with 90% lower rates of grade 3-5 infections. See related commentary by Garfall and Stadtmauer, p. 427 . This article is featured in Selected Articles from This Issue, p. 419.",
+      "live": false
+    },
+    {
+      "id": "PMID-36689692",
+      "type": "paper",
+      "title": "Tarlatamab, a First-in-Class DLL3-Targeted Bispecific T-Cell Engager, in Recurrent Small-Cell Lung Cancer: An Open-Label, Phase I Study.",
+      "date": "2023-01-23",
+      "display_date": "23 January 2023",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "authors": "Paz-Ares L, Champiat S, Lai WV, Izumi H, Govindan R, Boyer M, Hummel HD, Borghaei H, Johnson ML, Steeghs N, Blackhall F, Dowlati A, Reguart N, Yoshida T, He K, Gadgeel SM, Felip E, Zhang Y, Zhang Y, Pati A, Minocha M, Mukherjee S, Goldrick A, Nagorsen D, Hashemi Sadraei N, Owonikoko TK.",
+      "url": "https://europepmc.org/article/MED/36689692",
+      "pmid": "36689692",
+      "pmcid": "PMC10414718",
+      "doi": "10.1200/jco.22.02823",
+      "content": "Purpose: Small-cell lung cancer (SCLC) is an aggressive malignancy with limited treatments. Delta-like ligand 3 (DLL3) is aberrantly expressed in most SCLC. Tarlatamab (AMG 757), a bispecific T-cell engager molecule, binds both DLL3 and CD3 leading to T-cell-mediated tumor lysis. Herein, we report phase I results of tarlatamab in patients with SCLC.\n\nPatients and methods: This study evaluated tarlatamab in patients with relapsed/refractory SCLC. The primary end point was safety. Secondary end points included antitumor activity by modified RECIST 1.1, overall survival, and pharmacokinetics.\n\nResults: By July 19, 2022, 107 patients received tarlatamab in dose exploration (0.003 to 100 mg; n = 73) and expansion (100 mg; n = 34) cohorts. Median prior lines of anticancer therapy were 2 (range, 1-6); 49.5% received antiprogrammed death-1/programmed death ligand-1 therapy. Any-grade treatment-related adverse events occurred in 97 patients (90.7%) and grade ≥ 3 in 33 patients (30.8%). One patient (1%) had grade 5 pneumonitis. Cytokine release syndrome was the most common treatment-related adverse event, occurring in 56 patients (52%) including grade 3 in one patient (1%). Maximum tolerated dose was not reached. Objective response rate was 23.4% (95% CI, 15.7 to 32.5) including two complete and 23 partial responses. The median duration of response was 12.3 months (95% CI, 6.6 to 14.9). The disease control rate was 51.4% (95% CI, 41.5 to 61.2). The median progression-free survival and overall survival were 3.7 months (95% CI, 2.1 to 5.4) and 13.2 months (95% CI, 10.5 to not reached), respectively. Exploratory analysis suggests that selecting for increased DLL3 expression can result in increased clinical benefit.\n\nConclusion: In patients with heavily pretreated SCLC, tarlatamab demonstrated manageable safety with encouraging response durability. Further evaluation of this promising molecule is ongoing.",
+      "live": false
+    },
+    {
+      "id": "PMID-35665782",
+      "type": "paper",
+      "title": "Trastuzumab Deruxtecan in Previously Treated HER2-Low Advanced Breast Cancer.",
+      "date": "2022-06-05",
+      "display_date": "5 June 2022",
+      "journal": "The New England journal of medicine",
+      "authors": "Modi S, Jacot W, Yamashita T, Sohn J, Vidal M, Tokunaga E, Tsurutani J, Ueno NT, Prat A, Chae YS, Lee KS, Niikura N, Park YH, Xu B, Wang X, Gil-Gil M, Li W, Pierga JY, Im SA, Moore HCF, Rugo HS, Yerushalmi R, Zagouri F, Gombos A, Kim SB, Liu Q, Luo T, Saura C, Schmid P, Sun T, Gambhire D, Yung L, Wang Y, Singh J, Vitazka P, Meinhardt G, Harbeck N, Cameron DA, DESTINY-Breast04 Trial Investigators.",
+      "url": "https://europepmc.org/article/MED/35665782",
+      "pmid": "35665782",
+      "pmcid": "PMC10561652",
+      "doi": "10.1056/nejmoa2203690",
+      "content": "Background: Among breast cancers without human epidermal growth factor receptor 2 (HER2) amplification, overexpression, or both, a large proportion express low levels of HER2 that may be targetable. Currently available HER2-directed therapies have been ineffective in patients with these \"HER2-low\" cancers.\n\nMethods: We conducted a phase 3 trial involving patients with HER2-low metastatic breast cancer who had received one or two previous lines of chemotherapy. (Low expression of HER2 was defined as a score of 1+ on immunohistochemical [IHC] analysis or as an IHC score of 2+ and negative results on in situ hybridization.) Patients were randomly assigned in a 2:1 ratio to receive trastuzumab deruxtecan or the physician's choice of chemotherapy. The primary end point was progression-free survival in the hormone receptor-positive cohort. The key secondary end points were progression-free survival among all patients and overall survival in the hormone receptor-positive cohort and among all patients.\n\nResults: Of 557 patients who underwent randomization, 494 (88.7%) had hormone receptor-positive disease and 63 (11.3%) had hormone receptor-negative disease. In the hormone receptor-positive cohort, the median progression-free survival was 10.1 months in the trastuzumab deruxtecan group and 5.4 months in the physician's choice group (hazard ratio for disease progression or death, 0.51; P<0.001), and overall survival was 23.9 months and 17.5 months, respectively (hazard ratio for death, 0.64; P = 0.003). Among all patients, the median progression-free survival was 9.9 months in the trastuzumab deruxtecan group and 5.1 months in the physician's choice group (hazard ratio for disease progression or death, 0.50; P<0.001), and overall survival was 23.4 months and 16.8 months, respectively (hazard ratio for death, 0.64; P = 0.001). Adverse events of grade 3 or higher occurred in 52.6% of the patients who received trastuzumab deruxtecan and 67.4% of those who received the physician's choice of chemotherapy. Adjudicated, drug-related interstitial lung disease or pneumonitis occurred in 12.1% of the patients who received trastuzumab deruxtecan; 0.8% had grade 5 events.\n\nConclusions: In this trial involving patients with HER2-low metastatic breast cancer, trastuzumab deruxtecan resulted in significantly longer progression-free and overall survival than the physician's choice of chemotherapy. (Funded by Daiichi Sankyo and AstraZeneca; DESTINY-Breast04 ClinicalTrials.gov number, NCT03734029.).",
+      "live": false
+    },
+    {
+      "id": "PMID-35318309",
+      "type": "paper",
+      "title": "Antibody drug conjugate: the \"biological missile\" for targeted cancer therapy.",
+      "date": "2022-03-22",
+      "display_date": "22 March 2022",
+      "journal": "Signal transduction and targeted therapy",
+      "authors": "Fu Z, Li S, Han S, Shi C, Zhang Y.",
+      "url": "https://europepmc.org/article/MED/35318309",
+      "pmid": "35318309",
+      "pmcid": "PMC8941077",
+      "doi": "10.1038/s41392-022-00947-7",
+      "content": "Antibody-drug conjugate (ADC) is typically composed of a monoclonal antibody (mAbs) covalently attached to a cytotoxic drug via a chemical linker. It combines both the advantages of highly specific targeting ability and highly potent killing effect to achieve accurate and efficient elimination of cancer cells, which has become one of the hotspots for the research and development of anticancer drugs. Since the first ADC, Mylotarg® (gemtuzumab ozogamicin), was approved in 2000 by the US Food and Drug Administration (FDA), there have been 14 ADCs received market approval so far worldwide. Moreover, over 100 ADC candidates have been investigated in clinical stages at present. This kind of new anti-cancer drugs, known as \"biological missiles\", is leading a new era of targeted cancer therapy. Herein, we conducted a review of the history and general mechanism of action of ADCs, and then briefly discussed the molecular aspects of key components of ADCs and the mechanisms by which these key factors influence the activities of ADCs. Moreover, we also reviewed the approved ADCs and other promising candidates in phase-3 clinical trials and discuss the current challenges and future perspectives for the development of next generations, which provide insights for the research and development of novel cancer therapeutics using ADCs.",
+      "live": false
+    },
+    {
+      "id": "PMID-34627333",
+      "type": "paper",
+      "title": "A bispecific CAR-T cell therapy targeting BCMA and CD38 in relapsed or refractory multiple myeloma.",
+      "date": "2021-10-09",
+      "display_date": "9 October 2021",
+      "journal": "Journal of hematology & oncology",
+      "authors": "Mei H, Li C, Jiang H, Zhao X, Huang Z, Jin D, Guo T, Kou H, Liu L, Tang L, Yin P, Wang Z, Ai L, Ke S, Xia Y, Deng J, Chen L, Cai L, Sun C, Xia L, Hua G, Hu Y.",
+      "url": "https://europepmc.org/article/MED/34627333",
+      "pmid": "34627333",
+      "pmcid": "PMC8501733",
+      "doi": "10.1186/s13045-021-01170-7",
+      "content": "Background: BCMA-specific chimeric antigen receptor-T cells (CAR-Ts) have exhibited remarkable efficacy in refractory or relapsed multiple myeloma (RRMM); however, primary resistance and relapse exist with single-target immunotherapy. Bispecific CARs are proposed to mitigate these limitations.\n\nMethods: We constructed a humanized bispecific BM38 CAR targeting BCMA and CD38 and tested the antimyeloma activity of BM38 CAR-Ts in vitro and in vivo. Twenty-three patients with RRMM received infusions of BM38 CAR-Ts in a phase I trial.\n\nResults: BM38 CAR-Ts showed stronger in vitro cytotoxicity to heterogeneous MM cells than did T cells expressing an individual BCMA or CD38 CAR. BM38 CAR-Ts also exhibited potent antimyeloma activity in xenograft mouse models. In the phase I trial, cytokine release syndrome occurred in 20 patients (87%) and was mostly grade 1-2 (65%). Neurotoxicity was not observed. Hematologic toxicities were common, including neutropenia in 96% of the patients, leukopenia in 87%, anemia in 43% and thrombocytopenia in 61%. At a median follow-up of 9.0 months (range 0.5 to 18.5), 20 patients (87%) attained a clinical response and minimal residual disease-negativity (≤ 10-4 nucleated cells), with 12 (52%) achieving a stringent complete response. Extramedullary plasmacytoma was eliminated completely in 56% and partially in 33% and of 9 patients. The median progression-free survival was 17.2 months. Two relapsed patients maintained BCMA and CD38 expression on MM cells. Notably, BM38 CAR-Ts cells were detectable in 77.8% of evaluable patients at 9 months and 62.2% at 12 months.\n\nConclusion: Bispecific BM38 CAR-Ts were feasible, safe and significantly effective in patient with RRMM.\n\nTrial registration: Chictr.org.cn ChiCTR1800018143.",
+      "live": false
+    },
+    {
+      "id": "PMID-28262554",
+      "type": "paper",
+      "title": "Target Expression, Generation, Preclinical Activity, and Pharmacokinetics of the BCMA-T Cell Bispecific Antibody EM801 for Multiple Myeloma Treatment.",
+      "date": "2017-03-02",
+      "display_date": "2 March 2017",
+      "journal": "Cancer cell",
+      "authors": "Seckinger A, Delgado JA, Moser S, Moreno L, Neuber B, Grab A, Lipp S, Merino J, Prosper F, Emde M, Delon C, Latzko M, Gianotti R, Lüoend R, Murr R, Hosse RJ, Harnisch LJ, Bacac M, Fauti T, Klein C, Zabaleta A, Hillengass J, Cavalcanti-Adam EA, Ho AD, Hundemer M, San Miguel JF, Strein K, Umaña P, Hose D, Paiva B, Vu MD.",
+      "url": "https://europepmc.org/article/MED/28262554",
+      "pmid": "28262554",
+      "pmcid": null,
+      "doi": "10.1016/j.ccell.2017.02.002",
+      "content": "We identified B cell maturation antigen (BCMA) as a potential therapeutic target in 778 newly diagnosed and relapsed myeloma patients. We constructed an IgG-based BCMA-T cell bispecific antibody (EM801) and showed that it increased CD3+ T cell/myeloma cell crosslinking, followed by CD4+/CD8+ T cell activation, and secretion of interferon-γ, granzyme B, and perforin. This effect is CD4 and CD8 T cell mediated. EM801 induced, at nanomolar concentrations, myeloma cell death by autologous T cells in 34 of 43 bone marrow aspirates, including those from high-risk patients and patients after multiple lines of treatment, tumor regression in six of nine mice in a myeloma xenograft model, and depletion of BCMA+ cells in cynomolgus monkeys. Pharmacokinetics and pharmacodynamics indicate weekly intravenous/subcutaneous administration.",
+      "live": false
+    },
+    {
+      "id": "PMID-29037983",
+      "type": "paper",
+      "title": "Safety, pharmacokinetics, and antitumour activity of trastuzumab deruxtecan (DS-8201), a HER2-targeting antibody-drug conjugate, in patients with advanced breast and gastric or gastro-oesophageal tumours: a phase 1 dose-escalation study.",
+      "date": "2017-10-13",
+      "display_date": "13 October 2017",
+      "journal": "The Lancet. Oncology",
+      "authors": "Doi T, Shitara K, Naito Y, Shimomura A, Fujiwara Y, Yonemori K, Shimizu C, Shimoi T, Kuboki Y, Matsubara N, Kitano A, Jikoh T, Lee C, Fujisaki Y, Ogitani Y, Yver A, Tamura K.",
+      "url": "https://europepmc.org/article/MED/29037983",
+      "pmid": "29037983",
+      "pmcid": null,
+      "doi": "10.1016/s1470-2045(17)30604-6",
+      "content": "Background: Antibody-drug conjugates have emerged as a powerful strategy in cancer therapy and combine the ability of monoclonal antibodies to specifically target tumour cells with the highly potent killing activity of drugs with payloads too toxic for systemic administration. Trastuzumab deruxtecan (also known as DS-8201) is an antibody-drug conjugate comprised of a humanised antibody against HER2, a novel enzyme-cleavable linker, and a topoisomerase I inhibitor payload. We assessed its safety and tolerability in patients with advanced breast and gastric or gastro-oesophageal tumours.\n\nMethods: This was an open-label, dose-escalation phase 1 trial done at two study sites in Japan. Eligible patients were at least 20 years old with breast or gastric or gastro-oesophageal carcinomas refractory to standard therapy regardless of HER2 status. Participants received initial intravenous doses of trastuzumab deruxtecan from 0·8 to 8·0 mg/kg and dose-limiting toxicities were assessed over a 21-day cycle; thereafter, dose reductions were implemented as needed and patients were treated once every 3 weeks until they had unacceptable toxic effects or their disease progressed. Primary endpoints included identification of safety and the maximum tolerated dose or recommended phase 2 dosing and were analysed in all participants who received at least one dose of study drug. The dose-escalation study is the first part of a two-part study with the second dose-expansion part ongoing and enrolling patients as of July 8, 2017, in Japan and the USA. This trial is registered at ClinicalTrials.gov, number NCT02564900.\n\nFindings: Between Aug 28, 2015, and Aug 26, 2016, 24 patients were enrolled and received trastuzumab deruxtecan (n=3 for each of 0·8, 1·6, 3·2, and 8·0 mg/kg doses; n=6 for each of 5·4 and 6·4 mg/kg). Up to the study cutoff date of Feb 1, 2017, no dose-limiting toxic effects, substantial cardiovascular toxic effects, or deaths occurred. One patient was removed from the activity analysis because they had insufficient target lesions for analysis. The most common grade 3 adverse events were decreased lymphocyte (n=3) and decreased neutrophil count (n=2); and grade 4 anaemia was reported by one patient. Three serious adverse events-febrile neutropenia, intestinal perforation, and cholangitis-were reported by one patient each. Overall, in 23 evaluable patients, including six patients with low HER2-expressing tumours, ten patients achieved an objective response (43%, 95% CI 23·2-65·5). Disease control was achieved in 21 (91%; 95% CI 72·0-98·9) of 23 patients. Median follow-up time was 6·7 months (IQR 4·4-10·2), with nine (90%) of ten responses seen at doses of 5·4 mg/kg or greater.\n\nInterpretation: The maximum tolerated dose of trastuzumab deruxtecan was not reached. In this small, heavily pretreated study population, trastuzumab deruxtecan showed antitumour activity, even in low HER2-expressing tumours. Based on safety and activity, the most likely recommended phase 2 dosing is 5·4 or 6·4 mg/kg.\n\nFunding: Daiichi Sankyo Co, Ltd.",
+      "live": false
+    },
+    {
+      "id": "MEETING-2026-09-10",
+      "type": "meeting_note",
+      "title": "Biologics Programme Kickoff — BCMA Bispecific Candidate Selection",
+      "date": "2026-09-10",
+      "display_date": "10 September 2026",
+      "attendees": [
+        "Dr. Priya Rao",
+        "Elena Vasquez",
+        "Marcus Tan",
+        "Jonah Kim",
+        "Dr. Laila Haddad"
+      ],
+      "decisions": [
+        "Advance EV-201, a CD3xBCMA bispecific antibody, as the lead internal candidate.",
+        "Use the EM801 preclinical package as the primary external benchmark for BCMA target expression and T-cell redirection.",
+        "Keep both intravenous and subcutaneous routes in scope until the cynomolgus pharmacokinetic readout in November."
+      ],
+      "action_items": [
+        "Elena: Repeat BCMA expression quantification across the three highest-yield patient-derived marrow samples by 18 September.",
+        "Marcus: Build a benchmark table from EM801 and the BCMA bispecific infection literature by 22 September.",
+        "Jonah: Confirm whether the current formulation supports a 20 mg/mL subcutaneous concentration by 30 September."
+      ],
+      "open_questions": [
+        "Is BCMA expression density a reliable predictor of response across prior treatment lines?",
+        "Will the subcutaneous route produce acceptable bioavailability without a new formulation?"
+      ],
+      "content": "Biologics Programme Kickoff — BCMA Bispecific Candidate Selection\n10 September 2026, 09:00–10:30, South Col Room / hybrid\n\nAttendees: Dr. Priya Rao (Head of Biologics), Elena Vasquez (Assay Lead), Marcus Tan (Translational Science), Jonah Kim (CMC), Dr. Laila Haddad (Clinical).\n\nPurpose\nThe team met to select the lead BCMA-directed bispecific candidate and agree the external benchmark set for the programme.\n\nSummary\nThe group reviewed three internal formats: a CD3xBCMA IgG-like bispecific, a VH-only compact format, and a half-life-extended BiTE-style molecule. The CD3xBCMA IgG-like molecule, EV-201, was selected because it retained potent T-cell killing in donor marrow assays, showed a manageable preclinical cytokine profile, and fit the existing manufacturing platform.\n\nEM801 was chosen as the primary external benchmark. Its preclinical package links BCMA expression to T-cell redirection and supports weekly intravenous or subcutaneous dosing in cynomolgus monkeys. The team agreed that the next benchmark review should also include clinical safety data from BCMA-targeted bispecific antibodies, especially infection and cytokine release syndrome.\n\nCMC noted that the current formulation is validated at 10 mg/mL. A 20 mg/mL subcutaneous presentation is plausible but not yet demonstrated. Jonah will confirm before the November pharmacokinetic readout.\n\nClinical raised two open questions. First, BCMA expression density may not predict response consistently across heavily pretreated patients. Second, the subcutaneous route may change exposure and peak inflammatory cytokine kinetics. Both questions remain open pending the cynomolgus study.\n\nDecisions\n- Advance EV-201, a CD3xBCMA bispecific antibody, as the lead internal candidate.\n- Use the EM801 preclinical package as the primary external benchmark for BCMA target expression and T-cell redirection.\n- Keep both intravenous and subcutaneous routes in scope until the cynomolgus pharmacokinetic readout in November.\n\nAction items\n- Elena: Repeat BCMA expression quantification across the three highest-yield patient-derived marrow samples by 18 September.\n- Marcus: Build a benchmark table from EM801 and the BCMA bispecific infection literature by 22 September.\n- Jonah: Confirm whether the current formulation supports a 20 mg/mL subcutaneous concentration by 30 September.\n\nOpen questions\n- Is BCMA expression density a reliable predictor of response across prior treatment lines?\n- Will the subcutaneous route produce acceptable bioavailability without a new formulation?\n"
+    },
+    {
+      "id": "MEETING-2026-09-24",
+      "type": "meeting_note",
+      "title": "Biologics R&D Sync — Bispecific Affinity & CRS Mitigation",
+      "date": "2026-09-24",
+      "display_date": "24 September 2026",
+      "attendees": [
+        "Dr. Priya Rao",
+        "Elena Vasquez",
+        "Marcus Tan",
+        "Dr. Laila Haddad"
+      ],
+      "decisions": [
+        "Cap CD3 arm affinity at 15 nM to reduce cytokine release syndrome risk while preserving T-cell killing.",
+        "Adopt a step-up dosing schedule for the first-in-human study, with a 1 mg priming dose followed by 6 mg and 20 mg target doses.",
+        "Benchmark the internal VH-only bispecific format against EM801 and the tarlatamab safety experience before locking the construct."
+      ],
+      "action_items": [
+        "Elena: Run an IL-6 release assay across three donor PBMC lots and report by 2 October.",
+        "Marcus: Pull recent clinical ADC linker stability papers and bispecific CRS mitigation reviews for the next review.",
+        "Priya: Circulate the revised target product profile with the 15 nM affinity cap by 29 September."
+      ],
+      "open_questions": [
+        "Does subcutaneous dosing alter peak IL-6 kinetics in cynomolgus models?",
+        "Should the step-up schedule include corticosteroid prophylaxis for patients with high baseline tumor burden?"
+      ],
+      "content": "Biologics R&D Sync — Bispecific Affinity & CRS Mitigation\n24 September 2026, 14:00–15:30, Summit Room / hybrid\n\nAttendees: Dr. Priya Rao (Head of Biologics), Elena Vasquez (Assay Lead), Marcus Tan (Translational Science), Dr. Laila Haddad (Clinical).\n\nPurpose\nThe 24 September 2026 sync focused on the CD3 arm affinity window and a practical cytokine release syndrome mitigation plan for EV-201.\n\nSummary\nElena presented the latest T-cell killing data across a 1–100 nM affinity panel. Very high CD3 affinity improved killing in low-BCMA samples, but it also increased IL-6 and TNF-α release in donor PBMC assays. The group agreed that the gain in potency did not justify the cytokine penalty. A 15 nM CD3 arm was selected as the upper bound for the next construct.\n\nClinical reviewed tarlatamab's phase 1 safety profile as a reference point. Tarlatamab showed encouraging response durability in relapsed small-cell lung cancer, but cytokine release syndrome remained common and step-up dosing was central to managing it. Laila argued that a step-up schedule should be built into the first-in-human protocol from the start rather than added after a safety signal. The group agreed to a 1 mg priming dose, followed by 6 mg and 20 mg target doses, with mandatory premedication and a 24-hour observation window after the first two doses.\n\nThe VH-only format remains attractive because it is simpler to manufacture and may have lower Fc-mediated cytokine risk. Marcus will compare it with EM801 and the tarlatamab safety experience before the construct is locked. The team also wants a clearer view of how subcutaneous dosing changes peak IL-6 kinetics in cynomolgus models.\n\nDecisions\n- Cap CD3 arm affinity at 15 nM to reduce cytokine release syndrome risk while preserving T-cell killing.\n- Adopt a step-up dosing schedule for the first-in-human study, with a 1 mg priming dose followed by 6 mg and 20 mg target doses.\n- Benchmark the internal VH-only bispecific format against EM801 and the tarlatamab safety experience before locking the construct.\n\nAction items\n- Elena: Run an IL-6 release assay across three donor PBMC lots and report by 2 October.\n- Marcus: Pull recent clinical ADC linker stability papers and bispecific CRS mitigation reviews for the next review.\n- Priya: Circulate the revised target product profile with the 15 nM affinity cap by 29 September.\n\nOpen questions\n- Does subcutaneous dosing alter peak IL-6 kinetics in cynomolgus models?\n- Should the step-up schedule include corticosteroid prophylaxis for patients with high baseline tumor burden?\n"
+    },
+    {
+      "id": "MEETING-2026-10-03",
+      "type": "meeting_note",
+      "title": "ADC Platform Review — Linker Stability & Payload Strategy",
+      "date": "2026-10-03",
+      "display_date": "3 October 2026",
+      "attendees": [
+        "Dr. Priya Rao",
+        "Elena Vasquez",
+        "Marcus Tan",
+        "Jonah Kim"
+      ],
+      "decisions": [
+        "Prioritize an enzyme-cleavable GGFG linker with a topoisomerase I payload for the next ADC build.",
+        "Require a 14-day human plasma stability assay and a bystander-killing assay before candidate nomination.",
+        "Use trastuzumab deruxtecan as the linker and payload benchmark, not as a clinical comparator for the BCMA programme."
+      ],
+      "action_items": [
+        "Marcus: Compile linker stability data for GGFG, Val-Cit-PAB, and disulfide linkers by 10 October.",
+        "Elena: Source HER2-low and BCMA-positive cell lines for the bystander assay by 17 October.",
+        "Jonah: Assess whether the current conjugation site changes the drug-to-antibody ratio distribution by 20 October."
+      ],
+      "open_questions": [
+        "Does the topoisomerase I payload carry a higher interstitial lung disease risk than the microtubule inhibitor payload?",
+        "Would a dual-payload ADC improve activity in low-antigen tumors without increasing off-tumor toxicity?"
+      ],
+      "content": "ADC Platform Review — Linker Stability & Payload Strategy\n3 October 2026, 10:00–11:30, South Col Room / hybrid\n\nAttendees: Dr. Priya Rao, Elena Vasquez, Marcus Tan, Jonah Kim.\n\nPurpose\nReview the linker and payload options for the next internal antibody-drug conjugate build and agree the minimum evidence package for candidate nomination.\n\nSummary\nMarcus compared three linker families: the enzyme-cleavable GGFG linker used in trastuzumab deruxtecan, a Val-Cit-PAB cathepsin-cleavable linker, and a reducible disulfide linker. The GGFG linker had the best balance of plasma stability and intracellular release in the internal assay set. The team selected it for the next build with a topoisomerase I payload.\n\nThe group reviewed trastuzumab deruxtecan as a benchmark rather than a direct clinical comparator. Its HER2-low programme demonstrated that a bystander-capable payload can produce activity in tumors with heterogeneous antigen expression. The team wants the same mechanistic question answered for the BCMA programme, but with a clear-eyed view of the interstitial lung disease risk. The 14-day human plasma stability assay and bystander-killing assay are now mandatory before nomination.\n\nJonah raised a conjugation-site question. The current site may change the drug-to-antibody ratio distribution and could affect both exposure and tolerability. He will model the distribution before the next CMC review.\n\nDecisions\n- Prioritize an enzyme-cleavable GGFG linker with a topoisomerase I payload for the next ADC build.\n- Require a 14-day human plasma stability assay and a bystander-killing assay before candidate nomination.\n- Use trastuzumab deruxtecan as the linker and payload benchmark, not as a clinical comparator for the BCMA programme.\n\nAction items\n- Marcus: Compile linker stability data for GGFG, Val-Cit-PAB, and disulfide linkers by 10 October.\n- Elena: Source HER2-low and BCMA-positive cell lines for the bystander assay by 17 October.\n- Jonah: Assess whether the current conjugation site changes the drug-to-antibody ratio distribution by 20 October.\n\nOpen questions\n- Does the topoisomerase I payload carry a higher interstitial lung disease risk than the microtubule inhibitor payload?\n- Would a dual-payload ADC improve activity in low-antigen tumors without increasing off-tumor toxicity?\n"
+    },
+    {
+      "id": "MEETING-2026-10-14",
+      "type": "meeting_note",
+      "title": "Translational Medicine Review — Infection Prophylaxis & First-in-Human Readiness",
+      "date": "2026-10-14",
+      "display_date": "14 October 2026",
+      "attendees": [
+        "Dr. Priya Rao",
+        "Marcus Tan",
+        "Dr. Laila Haddad",
+        "Jonah Kim"
+      ],
+      "decisions": [
+        "Add intravenous immunoglobulin prophylaxis when serum IgG falls below 400 mg/dL in the first-in-human protocol.",
+        "Include monthly infection surveillance and hypogammaglobulinemia monitoring in the phase 1 schedule.",
+        "Use the BCMA bispecific infection data as the primary safety benchmark for the EV-201 risk management plan."
+      ],
+      "action_items": [
+        "Laila: Draft the infection prophylaxis section of the FIH protocol by 21 October.",
+        "Marcus: Reconcile the IVIg threshold with the published 90% infection-rate reduction data by 24 October.",
+        "Priya: Schedule a pre-IND meeting with the CRS and infection package by 7 November."
+      ],
+      "open_questions": [
+        "Is 400 mg/dL the right IgG threshold for prophylaxis, or should it be titre-specific?",
+        "How should we handle patients who develop grade 3 infections during deep remission?"
+      ],
+      "content": "Translational Medicine Review — Infection Prophylaxis & First-in-Human Readiness\n14 October 2026, 15:00–16:30, Summit Room / hybrid\n\nAttendees: Dr. Priya Rao, Marcus Tan, Dr. Laila Haddad, Jonah Kim.\n\nPurpose\nTranslate the BCMA bispecific infection literature into a practical prophylaxis and monitoring plan for the EV-201 first-in-human study.\n\nSummary\nMarcus summarized the BCMA bispecific infection data. In a retrospective cohort of 37 patients, 15 patients experienced a grade 3–5 infection and two infection-related deaths occurred during deep remissions. Profound hypogammaglobulinemia was universal among responders, and intravenous immunoglobulin was associated with a 90% lower rate of grade 3–5 infection during periods of use.\n\nThe team agreed that infection risk is not a late-line-only problem. Because most infections occurred during disease remission, the protocol needs proactive monitoring rather than reaction to neutropenia alone. Laila proposed a serum IgG threshold of 400 mg/dL for IVIg prophylaxis, with monthly infection surveillance and immunoglobulin monitoring. The group accepted the threshold for the protocol draft while noting that a titre-specific approach may be better.\n\nThe discussion also covered how to handle grade 3 infections during deep remission. No consensus was reached. The clinical team will bring a proposed algorithm to the next review. Priya will assemble the CRS and infection package for a pre-IND meeting in early November.\n\nDecisions\n- Add intravenous immunoglobulin prophylaxis when serum IgG falls below 400 mg/dL in the first-in-human protocol.\n- Include monthly infection surveillance and hypogammaglobulinemia monitoring in the phase 1 schedule.\n- Use the BCMA bispecific infection data as the primary safety benchmark for the EV-201 risk management plan.\n\nAction items\n- Laila: Draft the infection prophylaxis section of the FIH protocol by 21 October.\n- Marcus: Reconcile the IVIg threshold with the published 90% infection-rate reduction data by 24 October.\n- Priya: Schedule a pre-IND meeting with the CRS and infection package by 7 November.\n\nOpen questions\n- Is 400 mg/dL the right IgG threshold for prophylaxis, or should it be titre-specific?\n- How should we handle patients who develop grade 3 infections during deep remission?\n"
+    }
+  ]
+}
