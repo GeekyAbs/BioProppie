@@ -104,6 +104,7 @@ function renderChrome() {
   $("#workspace-backend").textContent = `${state.retrieval.backend} · ${state.retrieval.chunks} chunks`;
   $("#lit-bundled-count").textContent = Math.max(0, (state.counts.papers || 0) - (state.counts.live || 0));
   $("#lit-live-count").textContent = state.counts.live || 0;
+  $("#tab-logs-count").textContent = state.audit.length;
 
   $$(".mode-btn").forEach((button) => {
     button.classList.toggle("active", button.dataset.mode === state.mode);
@@ -441,7 +442,7 @@ function renderAudit() {
 }
 
 /* ---------- navigation + source jumps ---------- */
-function switchTab(tab) {
+function switchTab(tab, scrollToWorkspace = true) {
   state.tab = tab;
   $$(".tab-btn").forEach((button) => {
     const active = button.dataset.tab === tab;
@@ -451,6 +452,8 @@ function switchTab(tab) {
   $$(".panel").forEach((panel) => panel.classList.toggle("active", panel.id === `panel-${tab}`));
   if (tab === "meetings") renderMeetings();
   if (tab === "literature") renderLiterature();
+  if (tab === "logs") renderAudit();
+  if (scrollToWorkspace) window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function jumpToSource(docId, terms = []) {
@@ -462,13 +465,13 @@ function jumpToSource(docId, terms = []) {
   state.highlightTerms = terms.length ? terms : state.lastTerms;
   if (doc.type === "meeting_note") {
     state.selectedMeeting = doc.id;
-    switchTab("meetings");
+    switchTab("meetings", false);
     renderMeetings();
   } else {
     state.litHighlight = doc.id;
     state.litFilter = "";
     $("#lit-filter").value = "";
-    switchTab("literature");
+    switchTab("literature", false);
     renderLiterature();
   }
 }

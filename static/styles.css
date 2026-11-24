@@ -31,6 +31,7 @@
   --ease: cubic-bezier(0.7, 0, 0.2, 1);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --gutter: clamp(16px, 3.4vw, 54px);
+  --topbar-h: 70px;
   --shadow: 0 18px 60px rgba(30, 16, 53, 0.09), 0 2px 6px rgba(30, 16, 53, 0.04);
 }
 
@@ -174,7 +175,7 @@ svg { display: block; }
 }
 .fact b { font-weight: 600; color: var(--ink); }
 
-.layout { display: grid; grid-template-columns: minmax(0, 1fr) 370px; gap: 18px; align-items: start; }
+.layout { display: block; }
 
 /* ---------- workspace ---------- */
 .workspace {
@@ -183,13 +184,15 @@ svg { display: block; }
   box-shadow: var(--shadow);
   min-height: 720px;
   display: flex; flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   backdrop-filter: blur(16px);
 }
 .workspace-head {
+  position: sticky; top: var(--topbar-h); z-index: 30;
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
   padding: 0 20px; border-bottom: 1px solid var(--line);
-  background: rgba(247,246,242,0.82);
+  background: rgba(247,246,242,0.94);
+  backdrop-filter: blur(18px);
 }
 .tabs { display: flex; align-items: stretch; gap: 2px; }
 .tab-btn {
@@ -516,6 +519,24 @@ body[data-mode="CLOUD_APPROVED"] .boundary-gate { border-color: rgba(126,180,255
 .audit-foot { border-top: 1px solid var(--night-line); padding: 11px 14px; font-family: var(--f-mono); font-size: 6.5px; line-height: 1.5; letter-spacing: 0.04em; color: rgba(255,255,255,0.35); }
 .audit-foot b { color: rgba(255,255,255,0.65); font-weight: 500; }
 
+/* ---------- query logs tab ---------- */
+.logs-view { flex: 1; min-height: 0; overflow-y: auto; padding: 20px; }
+.logs-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+.logs-heading h2 { margin: 0; font-size: clamp(24px, 2.1vw, 31px); letter-spacing: -0.04em; line-height: 1; font-weight: 660; font-stretch: 110%; }
+.logs-heading h2 em { font-family: var(--f-serif); font-weight: 400; }
+.logs-heading p { margin: 8px 0 0; color: var(--ink-3); font-size: 12.5px; max-width: 60ch; }
+.logs-count { flex: none; font-family: var(--f-mono); font-size: 8px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--line-strong); padding: 6px 9px; background: rgba(255,255,255,0.6); }
+.logs-layout { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 14px; align-items: start; }
+.logs-summary { display: flex; flex-direction: column; gap: 12px; padding: 12px; background: var(--night); border: 1px solid rgba(30,16,53,0.7); }
+.logs-summary .guard-card, .logs-summary .audit-boundary { margin: 0; }
+.logs-note { border: 1px solid var(--line); background: rgba(255,255,255,0.92); padding: 12px; font-size: 11px; line-height: 1.5; color: var(--ink-2); }
+.logs-note b { display: block; margin-bottom: 5px; color: var(--ink); font-family: var(--f-mono); font-size: 8px; letter-spacing: 0.08em; text-transform: uppercase; }
+#panel-logs .audit { position: static; top: auto; min-height: 0; max-height: 680px; box-shadow: none; }
+#panel-logs .audit-head { padding: 15px 17px 12px; }
+#panel-logs .audit-head h2 { font-size: 18px; }
+#panel-logs .audit-feed { max-height: 520px; }
+#panel-logs .audit-foot { padding: 10px 14px; }
+
 /* ---------- toast / utility ---------- */
 .toast {
   position: fixed; z-index: 90; left: 50%; bottom: 22px; transform: translate(-50%, 20px);
@@ -542,6 +563,7 @@ body[data-mode="CLOUD_APPROVED"] .boundary-gate { border-color: rgba(126,180,255
   .workspace { min-height: 660px; }
 }
 @media (max-width: 700px) {
+  :root { --topbar-h: 116px; }
   .topbar { height: auto; min-height: 64px; padding-top: 10px; padding-bottom: 10px; flex-wrap: wrap; gap: 10px; }
   .brand-mark { width: 34px; height: 34px; }
   .brand-sub { font-size: 8px; }
@@ -567,6 +589,9 @@ body[data-mode="CLOUD_APPROVED"] .boundary-gate { border-color: rgba(126,180,255
   .lit-toolbar { flex-wrap: wrap; }
   .lit-grid { grid-template-columns: 1fr; }
   .lit-grid-wrap { padding: 13px 15px 18px; }
+  .logs-view { padding: 15px; }
+  .logs-layout { grid-template-columns: 1fr; }
+  .logs-heading { flex-direction: column; gap: 8px; }
   .chat-title-row { flex-direction: column; gap: 8px; }
   .local-pill { margin-top: 0; }
   .verify-chip.egress { margin-left: 0; }

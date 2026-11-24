@@ -91,6 +91,9 @@
             <button class="tab-btn" id="literature-tab" role="tab" aria-selected="false" aria-controls="panel-literature" data-tab="literature" type="button">
               <svg><use href="#i-library"/></svg>Literature <span class="tab-count" id="tab-papers-count">8</span>
             </button>
+            <button class="tab-btn" id="logs-tab" role="tab" aria-selected="false" aria-controls="panel-logs" data-tab="logs" type="button">
+              <svg><use href="#i-network"/></svg>Query logs <span class="tab-count" id="tab-logs-count">0</span>
+            </button>
           </nav>
           <div class="workspace-meta">
             <span class="secure"><svg><use href="#i-lock"/></svg><span id="workspace-policy">Local index</span></span>
@@ -162,34 +165,52 @@
             <div class="lit-grid" id="lit-grid"></div>
           </div>
         </section>
-      </section>
 
-      <aside class="audit" aria-label="Server audit log">
-        <div class="audit-head">
-          <div>
-            <div class="audit-kicker"><span class="live-dot"></span>Request log / live</div>
-            <h2>Queries and <em>policy changes.</em></h2>
+        <section class="panel" id="panel-logs" role="tabpanel" aria-labelledby="logs-tab">
+          <div class="logs-view">
+            <div class="logs-heading">
+              <div>
+                <h2>Query logs <em>/ monitoring</em></h2>
+                <p>Server-side record of queries, policy changes, egress decisions, and quote checks.</p>
+              </div>
+              <span class="logs-count" id="audit-count">0 events</span>
+            </div>
+            <div class="logs-layout">
+              <aside class="logs-summary">
+                <div class="guard-card" id="guard-card">
+                  <div class="guard-icon"><svg><use href="#i-shield"/></svg></div>
+                  <div class="guard-copy">
+                    <b id="guard-title">Egress off</b>
+                    <span id="guard-copy">0 outbound calls. Queries stay on this server.</span>
+                  </div>
+                </div>
+                <div class="audit-boundary">
+                  <div class="boundary-title">Egress boundary / server gate</div>
+                  <div class="boundary-row"><span>Local index</span><i></i><b id="boundary-local">12 docs</b></div>
+                  <div class="boundary-gate"><span id="boundary-mode">Blocked</span><small>gate</small><span id="boundary-egress">0 calls</span></div>
+                  <div class="boundary-row ext"><span>Public web</span><i></i><b id="boundary-web">ebi.ac.uk</b></div>
+                </div>
+                <div class="logs-note">
+                  <b>Why this is server-side</b>
+                  LOCAL_ONLY blocks external tools in the API before any request is sent. The toggle changes that guard, not just the interface.
+                </div>
+              </aside>
+              <div class="audit" aria-label="Server audit log">
+                <div class="audit-head">
+                  <div>
+                    <div class="audit-kicker"><span class="live-dot"></span>Request log / live</div>
+                    <h2>Queries and <em>policy changes.</em></h2>
+                  </div>
+                </div>
+                <div class="audit-feed" id="audit-feed"></div>
+                <div class="audit-foot">
+                  <b>Note.</b> Audit state lives in worker memory and is intended for this short demo.
+                </div>
+              </div>
+            </div>
           </div>
-          <span class="audit-count" id="audit-count">0 events</span>
-        </div>
-        <div class="guard-card" id="guard-card">
-          <div class="guard-icon"><svg><use href="#i-shield"/></svg></div>
-          <div class="guard-copy">
-            <b id="guard-title">Egress off</b>
-            <span id="guard-copy">0 outbound calls. Queries stay on this server.</span>
-          </div>
-        </div>
-        <div class="audit-feed" id="audit-feed"></div>
-        <div class="audit-boundary">
-          <div class="boundary-title">Egress boundary / server gate</div>
-          <div class="boundary-row"><span>Local index</span><i></i><b id="boundary-local">12 docs</b></div>
-          <div class="boundary-gate"><span id="boundary-mode">Blocked</span><small>gate</small><span id="boundary-egress">0 calls</span></div>
-          <div class="boundary-row ext"><span>Public web</span><i></i><b id="boundary-web">ebi.ac.uk</b></div>
-        </div>
-        <div class="audit-foot">
-          <b>Note.</b> LOCAL_ONLY is the default. External tools are blocked in the API before any request is sent.
-        </div>
-      </aside>
+        </section>
+      </section>
     </div>
   </main>
 
