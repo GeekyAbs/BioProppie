@@ -34,7 +34,7 @@ Python 3.11+ is recommended.
 
 ```bash
 uv venv --python 3.11 .venv
-uv pip install --python .venv/bin/python -r requirements.txt
+uv pip install --python .venv/bin/python -r python/requirements.txt
 
 .venv/bin/uvicorn app:app --host 127.0.0.1 --port 8000
 ```
@@ -44,7 +44,7 @@ Open `http://127.0.0.1:8000`.
 The default embedding backend is a 512-dimension deterministic hash. It starts instantly and uses almost no CPU. If you want the BGE ONNX model on a larger machine:
 
 ```bash
-uv pip install --python .venv/bin/python -r requirements-vector.txt
+uv pip install --python .venv/bin/python -r python/requirements-vector.txt
 EVST_EMBEDDING=fastembed .venv/bin/uvicorn app:app --host 127.0.0.1 --port 8000
 ```
 
@@ -151,13 +151,15 @@ The repo is already prepared for Cloudflare Pages. There is no build step.
 3. Select the `BioProppie` repository.
 4. Use these build settings:
    - Framework preset: **None**
-   - Build command: **leave empty**
+   - Build command: `npm run build` (explicit no-op; prevents Python auto-detection)
    - Build output directory: `static`
    - Root directory: `/`
 5. Add optional environment variables only if you want real synthesis:
    - `OPENAI_API_KEY` and optionally `OPENAI_MODEL`
    - or `ANTHROPIC_API_KEY` and optionally `ANTHROPIC_MODEL`
 6. Deploy. Cloudflare detects `functions/` automatically.
+
+If Cloudflare shows `Executing user deploy command: npx wrangler deploy`, you created a **Workers service**, not a Pages project. Create a new **Pages** project instead, or run `npm run pages:deploy` locally. Do not set a deploy command to `wrangler deploy`.
 
 The Pages Function API lives in `functions/`. It uses the same UI, policy guard, audit log, BM25 + hash-vector scoring, Europe PMC tool, and quote verifier as the Python app, but runs in the Worker runtime with no model and no CPU spike.
 
@@ -181,6 +183,6 @@ State note: the audit log and live-fetched papers live in Worker memory. Differe
 
 ### Python host (optional)
 
-The FastAPI version also works on Railway, Render, Hugging Face Spaces, or a small VPS. The default hashing backend starts in under a second and stays within cheap hardware. Skip `requirements-vector.txt` unless you deliberately want BGE embeddings.
+The FastAPI version also works on Railway, Render, Hugging Face Spaces, or a small VPS. The default hashing backend starts in under a second and stays within cheap hardware. Skip `python/requirements-vector.txt` unless you deliberately want BGE embeddings.
 
 Because both versions use in-memory audit/session state, both are intended for a single-process demo rather than multi-replica production.
