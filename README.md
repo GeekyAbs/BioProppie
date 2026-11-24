@@ -159,7 +159,7 @@ The repo is already prepared for Cloudflare Pages. There is no build step.
    - or `ANTHROPIC_API_KEY` and optionally `ANTHROPIC_MODEL`
 6. Deploy. Cloudflare detects `functions/` automatically.
 
-If Cloudflare shows `Executing user deploy command: npx wrangler deploy`, you created a **Workers service**, not a Pages project. Create a new **Pages** project instead, or run `npm run pages:deploy` locally. Do not set a deploy command to `wrangler deploy`.
+If the log shows `Executing user deploy command: npx wrangler deploy`, the **Deploy command** field in Cloudflare is wrong. Change it to `npx wrangler pages deploy static`, or clear the custom deploy command so Pages handles deployment itself. A warning saying `you have run wrangler deploy on a Pages project` confirms the project type is correct and only this setting needs fixing.
 
 The Pages Function API lives in `functions/`. It uses the same UI, policy guard, audit log, BM25 + hash-vector scoring, Europe PMC tool, and quote verifier as the Python app, but runs in the Worker runtime with no model and no CPU spike.
 
