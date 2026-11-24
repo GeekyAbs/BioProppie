@@ -97,7 +97,9 @@ retrieval.py      Chunking, BM25 + local hash vectors, span highlighting
 tools.py          Europe PMC live search, gated by require_cloud_approved()
 verifier.py       Exact/fuzzy quote verification against cited source text
 synthesis.py      Deterministic local/cloud briefs + optional OpenAI/Anthropic calls
-functions/        Cloudflare Pages Function port of the same API + precomputed data
+worker.js         Cloudflare Worker entry: /api/* routing + static asset serving
+functions/        API handler modules + precomputed data used by the Worker
+wrangler.jsonc    Worker config: main = worker.js, assets = ./static
 scripts/          Regenerate functions/data.generated.js from the corpus
 data/corpus.json  8 real Europe PMC abstracts + 4 simulated internal meeting notes
 static/           index.html, app.js, styles.css — zero-build UI
@@ -142,34 +144,47 @@ The eight bundled papers are real Europe PMC abstracts relevant to bispecific an
 
 ## Deployment notes
 
-### Cloudflare Pages (recommended demo link)
+### Cloudflare Worker with static assets (recommended for this account)
 
-The repo is already prepared for Cloudflare Pages. There is no build step.
+This Cloudflare account has a build token with **Workers Scripts: Edit** but no Pages permissions. The repo is therefore prepared as a **Worker with static assets**, which uses the existing token and needs no Pages project.
 
-1. Push the repo to GitHub.
-2. In Cloudflare, go to **Workers & Pages → Create → Pages → Connect to Git**.
-3. Select the `BioProppie` repository.
-4. Use these build settings:
-   - Framework preset: **None**
-   - Build command: `npm run build` (explicit no-op; prevents Python auto-detection)
-   - Build output directory: `static`
-   - Root directory: `/`
-5. Add optional environment variables only if you want real synthesis:
-   - `OPENAI_API_KEY` and optionally `OPENAI_MODEL`
-   - or `ANTHROPIC_API_KEY` and optionally `ANTHROPIC_MODEL`
-6. Deploy. Cloudflare detects `functions/` automatically.
+`wrangler.jsonc` declares:
 
-If the log shows `Executing user deploy command: npx wrangler deploy`, the **Deploy command** field in Cloudflare is wrong. Change it to `npx wrangler pages deploy static`, or clear the custom deploy command so Pages handles deployment itself. A warning saying `you have run wrangler deploy on a Pages project` confirms the project type is correct and only this setting needs fixing.
+- `main = "worker.js"`
+- `assets.directory = "./static"`
+- `assets.binding = "ASSETS"`
 
-The Pages Function API lives in `functions/`. It uses the same UI, policy guard, audit log, BM25 + hash-vector scoring, Europe PMC tool, and quote verifier as the Python app, but runs in the Worker runtime with no model and no CPU spike.
+`worker.js` routes `/api/*` to the handlers in `functions/api/` and serves the UI from `static/`. So the policy guard, audit log, Europe PMC tool, BM25 + hash-vector scoring, and quote verifier all still run server-side, with no model and no CPU spike.
 
-Preview locally before pushing:
+Cloudflare build settings:
 
-```bash
-npx wrangler pages dev static
+```text
+Build command:    npm run build
+Deploy command:   npx wrangler deploy
+Root directory:   /
 ```
 
-Then open `http://localhost:8788`.
+No build output directory is needed — the asset path is in `wrangler.jsonc`.
+
+Optional environment variables for real synthesis:
+
+```text
+OPENAI_API_KEY
+OPENAI_MODEL          # optional
+ANTHROPIC_API_KEY
+ANTHROPIC_MODEL       # optional
+```
+
+Trigger a **new build** after pushing, not “Retry build”, so the updated config is used.
+
+Preview locally:
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the local URL Wrangler prints, usually `http://localhost:8787`.
 
 If you edit `data/corpus.json`, regenerate the Worker data before committing:
 

@@ -1,6 +1,0 @@
-name = "bioproppie"
-pages_build_output_dir = "static"
-compatibility_date = "2025-01-01"
-
-# The repo has no build step. functions/data.generated.js is committed and
-# regenerated with: .venv/bin/python scripts/build-worker-data.py
